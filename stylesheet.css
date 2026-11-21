@@ -1,0 +1,163 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Smooth scrolling when clicking navbar links */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #222222;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0284c7;
+    color: white;
+}
+
+/* General Section Styling */
+.section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+/* Hero / Home Section */
+.hero {
+    text-align: center;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+}
+
+#greet-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0284c7;
+}
+
+/* Cards & Skills */
+.card {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f8fafc;
+    border-left: 4px solid #38bdf8;
+    border-radius: 4px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+/* Dark Mode Class (Toggled by JavaScript) */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+body.dark-mode .section {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .section h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .card {
+    background-color: #0f172a;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
